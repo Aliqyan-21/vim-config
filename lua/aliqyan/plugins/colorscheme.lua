@@ -32,7 +32,7 @@ return {
       local fm = require("fluoromachine")
 
       fm.setup({
-        glow = true,
+        glow = false,
         theme = "fluoromachine",
         transparent = "full",
       })
