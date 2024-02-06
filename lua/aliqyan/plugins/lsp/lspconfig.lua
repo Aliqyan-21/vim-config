@@ -76,11 +76,30 @@ return {
       on_attach = on_attach,
     })
 
-    -- configure ccls server
+    -- configure clangd server
     lspconfig["clangd"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "c", "cpp" },
+    })
+
+    local util = require("lspconfig/util")
+    -- configure go server
+    lspconfig["gopls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      filetypes = { "go", "gomod", "gowork", "gotmpl" },
+      cmd = { "gopls" },
+      root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+      setting = {
+        gopls = {
+          completeUnimported = true,
+          usePlaceholders = true,
+          analyses = {
+            unusedparams = true,
+          },
+        },
+      },
     })
 
     -- -- configure typescript server with plugin
