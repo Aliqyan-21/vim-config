@@ -1,6 +1,8 @@
 local opt = vim.opt -- for conciseness
 
-vim.opt.guicursor = ""
+vim.opt.guicursor = {
+  "a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
+}
 
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
