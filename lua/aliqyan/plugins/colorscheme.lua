@@ -35,6 +35,8 @@ return {
         glow = false,
         -- brightness = 0.05,
         theme = "fluoromachine",
+        -- theme = "retrowave",
+        -- theme = "delta",
         transparent = "full",
       })
 
