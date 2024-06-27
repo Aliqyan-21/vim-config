@@ -4,6 +4,9 @@ vim.opt.guicursor = {
   "a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
 }
 
+-- to make the lsp suggestion transparent fingers crossed
+vim.opt.pumblend = 30
+
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)
@@ -30,7 +33,7 @@ opt.cursorline = false -- highlight the current cursor line
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
 opt.background = "dark" -- colorschemes that can be light or dark will be made dark
-opt.signcolumn = "yes" -- show sign column so that text doesn't shift
+opt.signcolumn = "no" -- show sign column so that text doesn't shift
 
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
