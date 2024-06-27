@@ -33,8 +33,12 @@ opt.cursorline = false -- highlight the current cursor line
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
 opt.background = "dark" -- colorschemes that can be light or dark will be made dark
-opt.signcolumn = "no" -- show sign column so that text doesn't shift
 
+-- signcolumn config
+opt.signcolumn = "auto" -- show sign column so that text doesn't shift
+vim.cmd("highlight clear SignColumn") -- Clear sign column highlight group
+
+-- Other Neovim configurations can follow
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
