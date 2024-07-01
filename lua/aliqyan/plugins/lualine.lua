@@ -24,7 +24,7 @@ local colors = {
   red      = '#ec5f67',
       -- new colors
       color1 = '#7a7a7a',
-      color2 = '#c6fce1',
+      color2 = '#fffff0',
       color3 = '#74c69d',
       color13 = '#affc41', -- for visual block
       color4 = '#ffd97d',

@@ -4,6 +4,9 @@ vim.opt.guicursor = {
   "a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
 }
 
+-- toggle show modes in command line
+vim.opt.showmode = false
+
 -- to make the lsp suggestion transparent fingers crossed
 vim.opt.pumblend = 30
 
