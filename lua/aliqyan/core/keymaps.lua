@@ -21,6 +21,10 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
+-- Markdown Preview
+-- show show!
+keymap.set("n", "<leader>ss", ":MarkdownPreviewToggle<CR>", { desc = "Toggle Markdown Preview" })
+
 -- Disable continuations
 keymap.set("n", "<Leader>o", "o<Esc>^Da", opts)
 keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)

@@ -57,17 +57,18 @@ return {
         --   2) "none" for transparency
         --   3) "default" or nil will just use whatever lackluster's default is.
         tweak_background = {
-          normal = "default", -- main background
-          -- normal = "none", -- transparent
+          -- normal = "default", -- main background
+          normal = "none", -- transparent
           -- normal = '#a1b2c3',    -- hexcode
           -- normal = color.green,    -- lackluster color
           telescope = "none", -- telescope
-          menu = "default", -- nvim_cmp, wildmenu ... (bad idea to transparent)
+          -- menu = "default", -- nvim_cmp, wildmenu ... (bad idea to transparent)
+          menu = lackluster.color.gray3, -- nvim_cmp, wildmenu ... (bad idea to transparent)
           popup = "default", -- lazy, mason, whichkey ... (bad idea to transparent)
         },
         tweak_ui = {
           disable_undercurl = true, -- set to true if you want underline instead of undercurl
-          enable_end_of_buffer = true, -- set to true to show the end_of_buffer ~ symbols in the gutter
+          enable_end_of_buffer = false, -- set to true to show the end_of_buffer ~ symbols in the gutter
         },
         disable_plugin = {
           bufferline = true,

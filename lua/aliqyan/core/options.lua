@@ -7,7 +7,7 @@ vim.opt.guicursor = {
 -- toggle show modes in command line
 vim.opt.showmode = false
 
--- to make the lsp suggestion transparent fingers crossed
+-- to make the lsp suggestion transparent
 vim.opt.pumblend = 30
 
 -- line numbers
