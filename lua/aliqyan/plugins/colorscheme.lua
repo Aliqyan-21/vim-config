@@ -1,4 +1,5 @@
 return {
+
   -- {
   --   "maxmx03/fluoromachine.nvim",
   --   config = function()
@@ -16,22 +17,7 @@ return {
   --     vim.cmd.colorscheme("fluoromachine")
   --   end,
   -- },
-  -- {
-  --   "neanias/everforest-nvim",
-  --   version = false,
-  --   lazy = false,
-  --   prioity = 1000,
-  --   config = function()
-  --     require("everforest").setup({
-  --       background = "hard",
-  --       transparent_background_level = 2,
-  --       italics = false,
-  --       disable_italic_comments = true,
-  --       ui_contrast = "high",
-  --     })
-  --     vim.cmd.colorscheme("everforest")
-  --   end,
-  -- },
+
   {
     "slugbyte/lackluster.nvim",
     lazy = false,
@@ -45,7 +31,7 @@ return {
           -- string = "#a1b2c3", -- custom hexcode
           -- string = color.green, -- lackluster color
           string_escape = "default",
-          comment = "default",
+          comment = "#454545",
           builtin = "default", -- builtin modules and functions
           type = "default",
           keyword = "default",
@@ -100,16 +86,4 @@ return {
       vim.cmd.colorscheme("lackluster-hack")
     end,
   },
-  -- {
-  --   "gmr458/cold.nvim",
-  --   lazy = false,
-  --   prioity = 1000,
-  --   build = ":ColdCompile",
-  --   config = function()
-  --     require("cold").setup({
-  --       transparent_background = false,
-  --     })
-  --     vim.cmd.colorscheme("cold")
-  --   end,
-  -- },
 }
