@@ -4,6 +4,9 @@ vim.opt.guicursor = {
   "a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
 }
 
+-- toggle show tabs on top
+vim.opt.showtabline = 0
+
 -- toggle show modes in command line
 vim.opt.showmode = false
 
