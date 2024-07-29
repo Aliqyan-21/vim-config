@@ -1,5 +1,4 @@
 return {
-
   -- {
   --   "maxmx03/fluoromachine.nvim",
   --   config = function()
@@ -31,7 +30,7 @@ return {
           -- string = "#a1b2c3", -- custom hexcode
           -- string = color.green, -- lackluster color
           string_escape = "default",
-          comment = "#454545",
+          comment = "#555555",
           builtin = "default", -- builtin modules and functions
           type = "default",
           keyword = "default",
@@ -54,7 +53,7 @@ return {
         },
         tweak_ui = {
           disable_undercurl = true, -- set to true if you want underline instead of undercurl
-          enable_end_of_buffer = false, -- set to true to show the end_of_buffer ~ symbols in the gutter
+          enable_end_of_buffer = true, -- set to true to show the end_of_buffer ~ symbols in the gutter
         },
         disable_plugin = {
           bufferline = true,

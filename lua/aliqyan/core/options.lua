@@ -4,6 +4,10 @@ vim.opt.guicursor = {
   "a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
 }
 
+-- toggle statusline
+vim.opt.laststatus = 0
+vim.opt.ruler = false
+
 -- toggle show tabs on top
 vim.opt.showtabline = 0
 
