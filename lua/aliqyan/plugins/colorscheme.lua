@@ -19,7 +19,6 @@ return {
 
   {
     "slugbyte/lackluster.nvim",
-    lazy = false,
     priority = 1000,
     init = function()
       local lackluster = require("lackluster")
@@ -82,7 +81,32 @@ return {
           yanky = false,
         },
       })
-      vim.cmd.colorscheme("lackluster-hack")
+      -- vim.cmd.colorscheme("lackluster-hack")
+    end,
+  },
+
+  {
+    "kvrohit/substrata.nvim",
+    init = function()
+      vim.g.substrata_italic_comments = true
+      vim.g.substrata_italic_keywords = false
+      vim.g.substrata_italic_booleans = false
+      vim.g.substrata_italic_functions = false
+      vim.g.substrata_italic_variables = false
+      vim.g.substrata_transparent = true
+      vim.g.substrata_variant = "default"
+      -- vim.cmd.colorscheme("substrata")
+    end,
+  },
+
+  {
+    "aliqyan-21/darkvoid.nvim",
+    config = function()
+      require("darkvoid").setup({
+        transparent = true,
+        glow = false,
+      })
+      vim.cmd.colorscheme("darkvoid")
     end,
   },
 }
