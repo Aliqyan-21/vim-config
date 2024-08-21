@@ -101,10 +101,17 @@ return {
 
   {
     "aliqyan-21/darkvoid.nvim",
+    priority = 1000,
+    lazy = false,
     config = function()
       require("darkvoid").setup({
         transparent = true,
         glow = false,
+        colors = {
+          line_nr = "#505050",
+          -- comment = "#86A789",
+          comment = "#a6a2a2",
+        },
       })
       vim.cmd.colorscheme("darkvoid")
     end,

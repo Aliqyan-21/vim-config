@@ -15,7 +15,7 @@ vim.opt.showtabline = 0
 vim.opt.showmode = false
 
 -- to make the lsp suggestion transparent
-vim.opt.pumblend = 30
+-- vim.opt.pumblend = 30
 
 -- line numbers
 opt.relativenumber = true -- show relative line numbers
