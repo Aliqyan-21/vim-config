@@ -170,7 +170,8 @@ return {
         Lua = {
           -- make the language server recognize "vim" global
           diagnostics = {
-            globals = { "vim" },
+            globals = { "vim", "love" },
+            disable = { "duplicate-set-field" },
           },
           workspace = {
             -- make language server aware of runtime files
