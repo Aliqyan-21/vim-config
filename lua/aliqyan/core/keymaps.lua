@@ -6,11 +6,14 @@ vim.g.mapleader = " "
 local keymap = vim.keymap -- for conciseness
 
 ---------------------
--- General Keymaps -------------------
+vim.g.mapleader = " "
 
 -- Move lines
 keymap.set("v", "J", ":m '>+1<CR>gv=gv", opts)
 keymap.set("v", "K", ":m '<-2<CR>gv=gv", opts)
+
+-- leader p
+keymap.set("v", "<leader>p", '"_dP')
 
 -- replace
 keymap.set("n", "<leader>rr", ":%s/", opts)

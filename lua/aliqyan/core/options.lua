@@ -4,15 +4,17 @@ vim.opt.guicursor = {
   "a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
 }
 
+-- **** statusline ****
 -- toggle statusline
-vim.opt.laststatus = 0
-vim.opt.ruler = false
+vim.opt.laststatus = 2 -- 0 and 2
+vim.opt.ruler = true
 
 -- toggle show tabs on top
 vim.opt.showtabline = 0
 
 -- toggle show modes in command line
 vim.opt.showmode = false
+-- **** statusline end ****
 
 -- to make the lsp suggestion transparent
 -- vim.opt.pumblend = 30
