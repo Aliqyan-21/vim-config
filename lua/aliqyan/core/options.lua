@@ -50,6 +50,9 @@ opt.background = "dark" -- colorschemes that can be light or dark will be made d
 opt.signcolumn = "auto" -- show sign column so that text doesn't shift
 vim.cmd("highlight clear SignColumn") -- Clear sign column highlight group
 
+-- commandline height
+opt.cmdheight = 0
+
 -- Other Neovim configurations can follow
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position

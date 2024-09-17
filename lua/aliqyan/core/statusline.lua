@@ -2,6 +2,7 @@ vim.cmd([[
     hi StatuslineLeft guifg=#787276 guibg=NONE
     hi StatuslineRight guifg=#787276 guibg=NONE
     hi StatuslineMiddle guibg=NONE
+    hi StatuslineModified guifg=#787276 guibg=NONE " Transparent highlight for modified flag
 ]])
 
 local function mode()
@@ -16,7 +17,6 @@ local function mode()
     t = "t",
   }
   local current_mode = vim.api.nvim_get_mode().mode
-  -- return string.format("  %s ", modes[current_mode] or "UNKNOWN")
   return string.format(" %s ", modes[current_mode] or "UNKNOWN")
 end
 
@@ -64,6 +64,7 @@ local function left_island()
     "%#StatuslineLeft#",
     mode(),
     git_branch(),
+    "%#StatuslineModified#",
     "%m",
     -- lsp_diagnostics(), -- Uncomment for lsp_diagnostics
   })
@@ -77,7 +78,6 @@ local function right_island()
   })
 end
 
--- Construct the statusline with two islands and transparent middle
 function Statusline()
   return table.concat({
     "%#StatuslineLeft#",
