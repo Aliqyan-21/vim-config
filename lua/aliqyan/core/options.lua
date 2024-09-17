@@ -7,7 +7,7 @@ vim.opt.guicursor = {
 -- **** statusline ****
 -- toggle statusline
 vim.opt.laststatus = 2 -- 0 and 2
-vim.opt.ruler = true
+vim.opt.ruler = false
 
 -- toggle show tabs on top
 vim.opt.showtabline = 0

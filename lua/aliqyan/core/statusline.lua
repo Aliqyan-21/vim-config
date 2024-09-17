@@ -82,6 +82,7 @@ function Statusline()
   return table.concat({
     "%#StatuslineLeft#",
     left_island(),
+    "%#StatuslineMiddle#",
     "%=",
     right_island(),
   })
