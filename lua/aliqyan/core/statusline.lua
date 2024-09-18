@@ -7,14 +7,14 @@ vim.cmd([[
 
 local function mode()
   local modes = {
-    n = "n",
-    i = "i",
-    v = "v",
-    V = "vl",
-    [""] = "vb",
-    c = "c",
-    R = "r",
-    t = "t",
+    n = "",
+    i = "",
+    v = "",
+    V = " 󰫹",
+    [""] = " 󰫯",
+    c = "",
+    R = "󰬙",
+    t = "󰬁",
   }
   local current_mode = vim.api.nvim_get_mode().mode
   return string.format(" %s ", modes[current_mode] or "UNKNOWN")

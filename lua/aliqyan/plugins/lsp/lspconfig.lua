@@ -80,6 +80,7 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
       filetypes = { "c", "cpp" },
+      cmd = { "clangd", "--compile-commands-dir=./build" },
     })
 
     local util = require("lspconfig/util")

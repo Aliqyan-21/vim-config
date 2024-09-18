@@ -51,7 +51,7 @@ opt.signcolumn = "auto" -- show sign column so that text doesn't shift
 vim.cmd("highlight clear SignColumn") -- Clear sign column highlight group
 
 -- commandline height
-opt.cmdheight = 0
+opt.cmdheight = 1
 
 -- Other Neovim configurations can follow
 -- backspace
